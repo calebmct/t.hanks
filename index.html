@@ -151,16 +151,12 @@
             function giveHanks() {
                 var dataIndex = Math.floor(Math.random() * imageUrls.length);
                 var img = '<img src=\"hanks/' + imageUrls[dataIndex] + '\" ';
-                var altIndex = imageAlt[dataIndex];
-                var altTag = 'alt=\"' + altIndex;
+                var altTag = 'alt=\"' + imageAlt[dataIndex];
                 img += altTag + '\"/>';
                 return {
                     pic: img,
-                    tag: altIndex,
-                }
-            }
-            function altHanks() {
-                
+                    tag: imageAlt[dataIndex]
+                };
             }
         </script>
     </head>
