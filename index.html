@@ -4,69 +4,68 @@
 <title>t.hanks</title>
     <script type="text/javascript">
         var imageUrls = [
-             "/hanks/thanks00001.png"
-            , "/hanks/thanks00002.png"
-            , "/hanks/thanks00003.png"
-            , "/hanks/thanks00004.png"
-            , "/hanks/thanks00005.png"
-            , "/hanks/thanks00006.png"
-            , "/hanks/thanks00007.png"
-            , "/hanks/thanks00008.png"
-            , "/hanks/thanks00009.png"
-            , "/hanks/thanks00010.png"
-            , "/hanks/thanks00011.png"
-            , "/hanks/thanks00012.png"
-            , "/hanks/thanks00013.png"
-            , "/hanks/thanks00014.png"
-            , "/hanks/thanks00015.png"
-            , "/hanks/thanks00016.png"
-            , "/hanks/thanks00017.png"
-            , "/hanks/thanks00018.png"
-            , "/hanks/thanks00019.png"
-            , "/hanks/thanks00020.png"
-            , "/hanks/thanks00021.png"
-            , "/hanks/thanks00022.png"
-            , "/hanks/thanks00023.png"
-            , "/hanks/thanks00024.png"
-            , "/hanks/thanks00025.png"
-            , "/hanks/thanks00026.png"
-            , "/hanks/thanks00027.png"
-            , "/hanks/thanks00028.png"
-            , "/hanks/thanks00029.png"
-            , "/hanks/thanks00030.png"
-            , "/hanks/thanks00031.png"
-            , "/hanks/thanks00032.png"
-            , "/hanks/thanks00033.png"
-            , "/hanks/thanks00034.png"
-            , "/hanks/thanks00035.png"
-            , "/hanks/thanks00036.png"
-            , "/hanks/thanks00037.png"
-            , "/hanks/thanks00038.png"
-            , "/hanks/thanks00039.png"
-            , "/hanks/thanks00040.png"
-            , "/hanks/thanks00041.png"
-            , "/hanks/thanks00042.png"
-            , "/hanks/thanks00043.png"
-            , "/hanks/thanks00044.png"
-            , "/hanks/thanks00045.png"
-            , "/hanks/thanks00046.png"
-            , "/hanks/thanks00047.png"
-            , "/hanks/thanks00048.png"
-            , "/hanks/thanks00049.png"
-            , "/hanks/thanks00050.png"
-            , "/hanks/thanks00051.png"
-            , "/hanks/thanks00052.png"
-            , "/hanks/thanks00053.png"
-            , "/hanks/thanks00054.png"
-            , "/hanks/thanks00055.png"
-            , "/hanks/thanks00056.png"
-            , "/hanks/thanks00057.png"
-            , "/hanks/thanks00058.png"
-            , "/hanks/thanks00059.png"
-            , "/hanks/thanks00060.png"
-            , "/hanks/thanks00061.png"
-            , "/hanks/thanks00062.png"
-            , "/hanks/thanks00063.png"
+            "thanks00001.png"
+            , "thanks00002.png"
+            , "thanks00003.png"
+            , "thanks00004.png"
+            , "thanks00005.png"
+            , "thanks00006.png"
+            , "thanks00007.png"
+            , "thanks00008.png"
+            , "thanks00009.png"
+            , "thanks00010.png"
+            , "thanks00011.png"
+            , "thanks00012.png"
+            , "thanks00013.png"
+            , "thanks00014.png"
+            , "thanks00015.png"
+            , "thanks00016.png"
+            , "thanks00017.png"
+            , "thanks00018.png"
+            , "thanks00019.png"
+            , "thanks00020.png"
+            , "thanks00021.png"
+            , "thanks00022.png"
+            , "thanks00023.png"
+            , "thanks00024.png"
+            , "thanks00025.png"
+            , "thanks00026.png"
+            , "thanks00027.png"
+            , "thanks00028.png"
+            , "thanks00029.png"
+            , "thanks00030.png"
+            , "thanks00031.png"
+            , "thanks00032.png"
+            , "thanks00033.png"
+            , "thanks00034.png"
+            , "thanks00035.png"
+            , "thanks00036.png"
+            , "thanks00037.png"
+            , "thanks00038.png"
+            , "thanks00039.png"
+            , "thanks00040.png"
+            , "thanks00041.png"
+            , "thanks00042.png"
+            , "thanks00043.png"
+            , "thanks00044.png"
+            , "thanks00045.png"
+            , "thanks00046.png"
+            , "thanks00047.png"
+            , "thanks00048.png"
+            , "thanks00049.png"
+            , "thanks00050.png"
+            , "thanks00051.png"
+            , "thanks00052.png"
+            , "thanks00053.png"
+            , "thanks00054.png"
+            , "thanks00055.png"
+            , "thanks00056.png"
+            , "thanks00057.png"
+            , "thanks00058.png"
+            , "thanks00059.png"
+            , "thanks00060.png"
+            , "thanks00061.png"
+            , "thanks00062.png"
         ];
         var imageAlt = [
             "sombrero hanks"
@@ -132,13 +131,11 @@
             , "miniature hanks terrier"
             , "restful hanks"
         ];
-      
-        function getImageHtmlCode() {
+        function giveHanks() {
           var dataIndex = Math.floor(Math.random() * imageUrls.length);
-          var img = '<img src="'
-          var altTag = '\" alt=\"' + imageAlt[dataIndex] + '\"/>';        
-          img += imageUrls[dataIndex] + altTag;
-          img += '\"/>';
+          var img = '<img src=\"/hanks/' + imageUrls[dataIndex] + '\" ';
+          var altTag = 'alt=\"' + imageAlt[dataIndex];
+          img += altTag + '\"/>';
           return img;
         }
       </script>
@@ -221,13 +218,15 @@
 		font-weight: 100;
 	}
 	html {
-		background: black;
+		background: #eff0ed;
 	}
 </style>
 <body>
 <h1>t.hanks</h1>
-<script type="text/javascript">
-  document.write(getImageHtmlCode());
-</script>
+<p align:center;>
+    <script type="text/javascript">
+    document.write(giveHanks());
+    </script>
+</p>
 </body>
 </html>
