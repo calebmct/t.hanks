@@ -4,68 +4,109 @@
 <title>t.hanks</title>
     <script type="text/javascript">
         var imageUrls = [
-            "thanks00001.png"
-            , "thanks00002.png"
-            , "thanks00003.png"
-            , "thanks00004.png"
-            , "thanks00005.png"
-            , "thanks00006.png"
-            , "thanks00007.png"
-            , "thanks00008.png"
-            , "thanks00009.png"
-            , "thanks00010.png"
-            , "thanks00011.png"
-            , "thanks00012.png"
-            , "thanks00013.png"
-            , "thanks00014.png"
-            , "thanks00015.png"
-            , "thanks00016.png"
-            , "thanks00017.png"
-            , "thanks00018.png"
-            , "thanks00019.png"
-            , "thanks00020.png"
-            , "thanks00021.png"
-            , "thanks00022.png"
-            , "thanks00023.png"
-            , "thanks00024.png"
-            , "thanks00025.png"
-            , "thanks00026.png"
-            , "thanks00027.png"
-            , "thanks00028.png"
-            , "thanks00029.png"
-            , "thanks00030.png"
-            , "thanks00031.png"
-            , "thanks00032.png"
-            , "thanks00033.png"
-            , "thanks00034.png"
-            , "thanks00035.png"
-            , "thanks00036.png"
-            , "thanks00037.png"
-            , "thanks00038.png"
-            , "thanks00039.png"
-            , "thanks00040.png"
-            , "thanks00041.png"
-            , "thanks00042.png"
-            , "thanks00043.png"
-            , "thanks00044.png"
-            , "thanks00045.png"
-            , "thanks00046.png"
-            , "thanks00047.png"
-            , "thanks00048.png"
-            , "thanks00049.png"
-            , "thanks00050.png"
-            , "thanks00051.png"
-            , "thanks00052.png"
-            , "thanks00053.png"
-            , "thanks00054.png"
-            , "thanks00055.png"
-            , "thanks00056.png"
-            , "thanks00057.png"
-            , "thanks00058.png"
-            , "thanks00059.png"
-            , "thanks00060.png"
-            , "thanks00061.png"
-            , "thanks00062.png"
+            "hanks00001.png"
+            , "hanks00002.png"
+            , "hanks00003.png"
+            , "hanks00004.png"
+            , "hanks00005.png"
+            , "hanks00006.png"
+            , "hanks00007.png"
+            , "hanks00008.png"
+            , "hanks00009.png"
+            , "hanks00010.png"
+            , "hanks00011.png"
+            , "hanks00012.png"
+            , "hanks00013.png"
+            , "hanks00014.png"
+            , "hanks00015.png"
+            , "hanks00016.png"
+            , "hanks00017.png"
+            , "hanks00018.png"
+            , "hanks00019.png"
+            , "hanks00020.png"
+            , "hanks00021.png"
+            , "hanks00022.png"
+            , "hanks00023.png"
+            , "hanks00024.png"
+            , "hanks00025.png"
+            , "hanks00026.png"
+            , "hanks00027.png"
+            , "hanks00028.png"
+            , "hanks00029.png"
+            , "hanks00030.png"
+            , "hanks00031.png"
+            , "hanks00032.png"
+            , "hanks00033.png"
+            , "hanks00034.png"
+            , "hanks00035.png"
+            , "hanks00036.png"
+            , "hanks00037.png"
+            , "hanks00038.png"
+            , "hanks00039.png"
+            , "hanks00040.png"
+            , "hanks00041.png"
+            , "hanks00042.png"
+            , "hanks00043.png"
+            , "hanks00044.png"
+            , "hanks00045.png"
+            , "hanks00046.png"
+            , "hanks00047.png"
+            , "hanks00048.png"
+            , "hanks00049.png"
+            , "hanks00050.png"
+            , "hanks00051.png"
+            , "hanks00052.png"
+            , "hanks00053.png"
+            , "hanks00054.png"
+            , "hanks00055.png"
+            , "hanks00056.png"
+            , "hanks00057.png"
+            , "hanks00058.png"
+            , "hanks00059.png"
+            , "hanks00060.png"
+            , "hanks00061.png"
+            , "hanks00062.png"
+            , "hanks00063.png"
+            , "hanks00064.png"
+            , "hanks00065.png"
+            , "hanks00066.png"
+            , "hanks00067.png"
+            , "hanks00068.png"
+            , "hanks00069.png"
+            , "hanks00070.png"
+            , "hanks00071.png"
+            , "hanks00072.png"
+            , "hanks00073.png"
+            , "hanks00074.png"
+            , "hanks00075.png"
+            , "hanks00076.png"
+            , "hanks00077.png"
+            , "hanks00078.png"
+            , "hanks00079.png"
+            , "hanks00080.png"
+            , "hanks00081.png"
+            , "hanks00082.png"
+            , "hanks00083.png"
+            , "hanks00084.png"
+            , "hanks00085.png"
+            , "hanks00086.png"
+            , "hanks00087.png"
+            , "hanks00088.png"
+            , "hanks00089.png"
+            , "hanks00090.png"
+            , "hanks00091.png"
+            , "hanks00092.png"
+            , "hanks00093.png"
+            , "hanks00094.png"
+            , "hanks00095.png"
+            , "hanks00096.png"
+            , "hanks00097.png"
+            , "hanks00098.png"
+            , "hanks00099.png"
+            , "hanks00100.png"
+            , "hanks00101.png"
+            , "hanks00102.png"
+            , "hanks00103.png"
         ];
         var imageAlt = [
             "sombrero hanks"
@@ -132,11 +173,17 @@
             , "restful hanks"
         ];
         function giveHanks() {
-          var dataIndex = Math.floor(Math.random() * imageUrls.length);
-          var img = '<img src=\"hanks/' + imageUrls[dataIndex] + '\" ';
-          var altTag = 'alt=\"' + imageAlt[dataIndex];
-          img += altTag + '\"/>';
-          return img;
+            var dataIndex = Math.floor(Math.random() * imageUrls.length);
+            var img = '<img src=\"hanks/' + imageUrls[dataIndex] + '\" ';
+            var altTag = 'alt=\"' + imageAlt[dataIndex];
+            img += altTag + '\"/>';
+            return {
+                pic: img,
+                tag: altTag,
+            }
+        }
+        function altHanks() {
+            
         }
       </script>
 </head>
@@ -200,21 +247,22 @@
 	h1 {
 		font-family: blue-fires, sans-serif;
 		font-size: 3rem;
+        margin-left: 5px;
 	}
 	h2 {
 		font-size: 2.5rem;
-		font-weight: 100;
-	}
-	h3 {
-		font-size: 2.5rem;	
 		font-weight: bold;
 	}
-	h4 {
+	h3 {
 		font-size: 2rem;	
-		font-weight: normal;
+		font-weight: 100;
+	}
+	h4 {
+		font-size: 1.5rem;	
+		font-weight: bold;
 	}
 	h5 {
-		font-size: 1.5rem;	
+		font-size: 1rem;	
 		font-weight: 100;
 	}
 	html {
@@ -222,11 +270,19 @@
 	}
 </style>
 <body>
-<h1>t.hanks</h1>
-<div align:center;>
-    <script type="text/javascript">
-    document.write(giveHanks());
-    </script>
-</div>
+    <h1>t.hanks</h1>
+    <div align="center";>
+        <script type="text/javascript">
+            document.write(giveHanks().pic);
+        </script>
+    </div>
+    <br>
+    <div align="center";>
+        <h4>
+        <script type="text/javascript">
+            document.write(giveHanks().tag);
+        </script>
+        </h4>
+    </div>
 </body>
 </html>
