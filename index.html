@@ -1,193 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>t.hanks</title>
-    <script type="text/javascript">
-        var imageUrls = [
-            "hanks00001.png"
-            , "hanks00002.png"
-            , "hanks00003.png"
-            , "hanks00004.png"
-            , "hanks00005.png"
-            , "hanks00006.png"
-            , "hanks00007.png"
-            , "hanks00008.png"
-            , "hanks00009.png"
-            , "hanks00010.png"
-            , "hanks00011.png"
-            , "hanks00012.png"
-            , "hanks00013.png"
-            , "hanks00014.png"
-            , "hanks00015.png"
-            , "hanks00016.png"
-            , "hanks00017.png"
-            , "hanks00018.png"
-            , "hanks00019.png"
-            , "hanks00020.png"
-            , "hanks00021.png"
-            , "hanks00022.png"
-            , "hanks00023.png"
-            , "hanks00024.png"
-            , "hanks00025.png"
-            , "hanks00026.png"
-            , "hanks00027.png"
-            , "hanks00028.png"
-            , "hanks00029.png"
-            , "hanks00030.png"
-            , "hanks00031.png"
-            , "hanks00032.png"
-            , "hanks00033.png"
-            , "hanks00034.png"
-            , "hanks00035.png"
-            , "hanks00036.png"
-            , "hanks00037.png"
-            , "hanks00038.png"
-            , "hanks00039.png"
-            , "hanks00040.png"
-            , "hanks00041.png"
-            , "hanks00042.png"
-            , "hanks00043.png"
-            , "hanks00044.png"
-            , "hanks00045.png"
-            , "hanks00046.png"
-            , "hanks00047.png"
-            , "hanks00048.png"
-            , "hanks00049.png"
-            , "hanks00050.png"
-            , "hanks00051.png"
-            , "hanks00052.png"
-            , "hanks00053.png"
-            , "hanks00054.png"
-            , "hanks00055.png"
-            , "hanks00056.png"
-            , "hanks00057.png"
-            , "hanks00058.png"
-            , "hanks00059.png"
-            , "hanks00060.png"
-            , "hanks00061.png"
-            , "hanks00062.png"
-            , "hanks00063.png"
-            , "hanks00064.png"
-            , "hanks00065.png"
-            , "hanks00066.png"
-            , "hanks00067.png"
-            , "hanks00068.png"
-            , "hanks00069.png"
-            , "hanks00070.png"
-            , "hanks00071.png"
-            , "hanks00072.png"
-            , "hanks00073.png"
-            , "hanks00074.png"
-            , "hanks00075.png"
-            , "hanks00076.png"
-            , "hanks00077.png"
-            , "hanks00078.png"
-            , "hanks00079.png"
-            , "hanks00080.png"
-            , "hanks00081.png"
-            , "hanks00082.png"
-            , "hanks00083.png"
-            , "hanks00084.png"
-            , "hanks00085.png"
-            , "hanks00086.png"
-            , "hanks00087.png"
-            , "hanks00088.png"
-            , "hanks00089.png"
-            , "hanks00090.png"
-            , "hanks00091.png"
-            , "hanks00092.png"
-            , "hanks00093.png"
-            , "hanks00094.png"
-            , "hanks00095.png"
-            , "hanks00096.png"
-            , "hanks00097.png"
-            , "hanks00098.png"
-            , "hanks00099.png"
-            , "hanks00100.png"
-            , "hanks00101.png"
-            , "hanks00102.png"
-            , "hanks00103.png"
-        ];
-        var imageAlt = [
-            "sombrero hanks"
-            , "CEO hanks"
-            , "salvahanks tommi"
-            , "breaching hanks"
-            , "naval hanks"
-            , "rock and a hanks place"
-            , "taste the sky hanks"
-            , "tennis pro hanks"
-            , "finding hanks"
-            , "stingray hanks"
-            , "hanks collage"
-            , "big brain time hanks"
-            , "cool pool hanks"
-            , "hankprints in the sand"
-            , "pop-up hanks"
-            , "squid hanks"
-            , "pink minion hanks art"
-            , "NSFHanks"
-            , "frankenhanks"
-            , "crispy hanks"
-            , "conehanks"
-            , "smooth hanks"
-            , "wookie hanks"
-            , "the man with hanks a face"
-            , "hanks skin mask"
-            , "sand puddle hanks"
-            , "lemme see here hanks"
-            , "pickle hanks"
-            , "wrinkle monster hanks"
-            , "pelican hanks"
-            , "surprised hanks"
-            , "graffiti hanks"
-            , "parrothead hanks"
-            , "sloth from goonies hanks"
-            , "casual corporate photoshoot hanks"
-            , "candid CFO hanks"
-            , "hanksequin"
-            , "barbie hanks"
-            , "tree spirit hanks"
-            , "bank manager hanks"
-            , "sunburned lips hanks"
-            , "noel gallaghanks"
-            , "matthew mcconaughanks"
-            , "eastern european colin hanks"
-            , "hanks suit"
-            , "chief quimby hanks"
-            , "infomercial red carpet hanks"
-            , "max hanksroom"
-            , "skin blanket hammock hanks"
-            , "hanks stamp"
-            , "footballer hanks"
-            , "chest hair hanks"
-            , "silly putty hanks"
-            , "forehanks"
-            , "buscemhanks"
-            , "wanna buy a toy? hanks"
-            , "hankserace"
-            , "is this thing on? hanks"
-            , "chum drum bedhanks"
-            , "king of the hanks"
-            , "miniature hanks terrier"
-            , "restful hanks"
-        ];
-        function giveHanks() {
-            var dataIndex = Math.floor(Math.random() * imageUrls.length);
-            var img = '<img src=\"hanks/' + imageUrls[dataIndex] + '\" ';
-            var altIndex = imageAlt[dataIndex];
-            var altTag = 'alt=\"' + altIndex;
-            img += altTag + '\"/>';
-            return {
-                pic: img,
-                tag: altIndex,
+    <head>
+        <title>t.hanks</title>
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-t_hanks-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-t_hanks-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-t_hanks-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-t_hanks-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-t_hanks-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-t_hanks-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-t_hanks-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-t_hanks-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-t_hanks-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-t_hanks-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/ms-t_hanks-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <script type="text/javascript">
+            var imageUrls = [
+                "hanks00001.png"
+                , "hanks00002.png"
+                , "hanks00003.png"
+                , "hanks00004.png"
+                , "hanks00005.png"
+                , "hanks00006.png"
+                , "hanks00007.png"
+                , "hanks00008.png"
+                , "hanks00009.png"
+                , "hanks00010.png"
+                , "hanks00011.png"
+                , "hanks00012.png"
+                , "hanks00013.png"
+                , "hanks00014.png"
+                , "hanks00015.png"
+                , "hanks00016.png"
+                , "hanks00017.png"
+                , "hanks00018.png"
+                , "hanks00019.png"
+                , "hanks00020.png"
+                , "hanks00021.png"
+                , "hanks00022.png"
+                , "hanks00023.png"
+                , "hanks00024.png"
+                , "hanks00025.png"
+                , "hanks00026.png"
+                , "hanks00027.png"
+                , "hanks00028.png"
+                , "hanks00029.png"
+                , "hanks00030.png"
+                , "hanks00031.png"
+                , "hanks00032.png"
+                , "hanks00033.png"
+                , "hanks00034.png"
+                , "hanks00035.png"
+                , "hanks00036.png"
+                , "hanks00037.png"
+                , "hanks00038.png"
+                , "hanks00039.png"
+                , "hanks00040.png"
+                , "hanks00041.png"
+                , "hanks00042.png"
+                , "hanks00043.png"
+                , "hanks00044.png"
+                , "hanks00045.png"
+                , "hanks00046.png"
+                , "hanks00047.png"
+                , "hanks00048.png"
+                , "hanks00049.png"
+                , "hanks00050.png"
+                , "hanks00051.png"
+                , "hanks00052.png"
+                , "hanks00053.png"
+                , "hanks00054.png"
+                , "hanks00055.png"
+                , "hanks00056.png"
+                , "hanks00057.png"
+                , "hanks00058.png"
+                , "hanks00059.png"
+                , "hanks00060.png"
+                , "hanks00061.png"
+                , "hanks00062.png"
+            ];
+            var imageAlt = [
+                "sombrero hanks"
+                , "CEO hanks"
+                , "salvahanks tommi"
+                , "breaching hanks"
+                , "naval hanks"
+                , "rock and a hanks place"
+                , "taste the sky hanks"
+                , "tennis pro hanks"
+                , "finding hanks"
+                , "stingray hanks"
+                , "hanks collage"
+                , "big brain time hanks"
+                , "cool pool hanks"
+                , "hankprints in the sand"
+                , "pop-up hanks"
+                , "squid hanks"
+                , "pink minion hanks art"
+                , "NSFHanks"
+                , "frankenhanks"
+                , "crispy hanks"
+                , "conehanks"
+                , "smooth hanks"
+                , "wookie hanks"
+                , "the man with hanks a face"
+                , "hanks skin mask"
+                , "sand puddle hanks"
+                , "lemme see here hanks"
+                , "pickle hanks"
+                , "wrinkle monster hanks"
+                , "pelican hanks"
+                , "surprised hanks"
+                , "graffiti hanks"
+                , "parrothead hanks"
+                , "sloth from goonies hanks"
+                , "casual corporate photoshoot hanks"
+                , "candid CFO hanks"
+                , "hanksequin"
+                , "barbie hanks"
+                , "tree spirit hanks"
+                , "bank manager hanks"
+                , "sunburned lips hanks"
+                , "noel gallaghanks"
+                , "matthew mcconaughanks"
+                , "eastern european colin hanks"
+                , "hanks suit"
+                , "chief quimby hanks"
+                , "infomercial red carpet hanks"
+                , "max hanksroom"
+                , "skin blanket hammock hanks"
+                , "hanks stamp"
+                , "footballer hanks"
+                , "chest hair hanks"
+                , "silly putty hanks"
+                , "forehanks"
+                , "buscemhanks"
+                , "wanna buy a toy? hanks"
+                , "hankserace"
+                , "is this thing on? hanks"
+                , "chum drum bedhanks"
+                , "king of the hanks"
+                , "miniature hanks terrier"
+                , "restful hanks"
+            ];
+            function giveHanks() {
+                var dataIndex = Math.floor(Math.random() * imageUrls.length);
+                var img = '<img src=\"hanks/' + imageUrls[dataIndex] + '\" ';
+                var altIndex = imageAlt[dataIndex];
+                var altTag = 'alt=\"' + altIndex;
+                img += altTag + '\"/>';
+                return {
+                    pic: img,
+                    tag: altIndex,
+                }
             }
-        }
-        function altHanks() {
-            
-        }
-      </script>
-</head>
+            function altHanks() {
+                
+            }
+        </script>
+    </head>
 <style>
 	@font-face {
 		font-family: fort;
@@ -277,13 +253,12 @@
             document.write(giveHanks().pic);
         </script>
     </div>
-    <br>
     <div align="center";>
-        <h4>
+        <h5>
         <script type="text/javascript">
             document.write(giveHanks().tag);
         </script>
-        </h4>
+        </h5>
     </div>
 </body>
 </html>
