@@ -170,7 +170,7 @@
             ];
             function giveHanks() {
                 var dataIndex = Math.floor(Math.random() * imageUrls.length);
-                var img = '<div> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div>';
+                var img = '<div id=\"hanksypanksy\";> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div>';
                 var title = '<div id=\"hainks\";> <h2>from ' + imgTitle[dataIndex] + '</h2></div>';
                 var getHanks = img + title;
                 return getHanks;
@@ -199,13 +199,18 @@ body {
 #wrapper {
 	text-align: center;
 }
-#hainks {
-    margin: 0;
+#hanksypanksy {
     background-image: url("hanks/hanks_framed.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     height: 443px;
+}
+#hanksypanksy img {
+    margin-top: 93px;
+}
+#hainks {
+    margin: 0;
 }
 #attribution {
 	position: absolute;
