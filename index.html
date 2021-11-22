@@ -142,7 +142,7 @@
                 , "buscemhanks"
                 , "wanna buy a toy? hanks"
                 , "hankserace"
-                , "is this thing on? hanks"
+                , "grandpa hanks on a zoom call"
                 , "chum drum bedhanks"
                 , "king of the hanks"
                 , "miniature hanks terrier"
@@ -150,99 +150,67 @@
             ];
             function giveHanks() {
                 var dataIndex = Math.floor(Math.random() * imageUrls.length);
-                var img = '<div align=\"center\";> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div> <div align=\"center\";>';
-                var title = '<div align=\"center\";> <h5>' + imgTitle[dataIndex] + '</h5>';
-                insertHanks = img + title;
-                return insertHanks;
+                var img = '<div> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div> <div align=\"center\";>';
+                var title = '<div id=\"hainks\";> <h2>from ' + imgTitle[dataIndex] + '</h2>';
+                var getHanks = img + title;
+                return getHanks;
             }
         </script>
     </head>
 <style>
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-Book.otf);
-		font-weight: normal;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-BookItalic.otf);
-		font-weight: normal;
-		font-style: italic;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-Bold.otf);
-		font-weight: bold;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-BoldItalic.otf);
-		font-weight: bold;
-		font-style: italic;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-Extralight.otf);
-		font-weight: 100;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-ExtralightItalic.otf);
-		font-weight: 100;
-		font-style: italic;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-Black.otf);
-		font-weight: 900;
-	}
-	@font-face {
-		font-family: fort;
-		src: url(assets/Fort-BlackItalic.otf);
-		font-weight: 900;
-		font-style: italic;
-	}
-	@font-face {
-		font-family: blue-fires;
-		src: url(assets/BlueFires.otf);
-		font-weight: normal;
-	}
-	h2, h3, h4, h5, body, p {
-		font-family: 'fort', sans-serif;
-	}
-	body, p {
-		font-size: 1rem;
-		font-weight: normal;
-	}
-	h1 {
-		font-family: blue-fires, sans-serif;
-		font-size: 3rem;
-        margin-left: 5px;
-	}
-	h2 {
-		font-size: 2.5rem;
-		font-weight: bold;
-	}
-	h3 {
-		font-size: 2rem;	
-		font-weight: 100;
-	}
-	h4 {
-		font-size: 1.5rem;	
-		font-weight: bold;
-	}
-	h5 {
-		font-size: 1rem;	
-		font-weight: 100;
-	}
-	html {
-		background: #eff0ed;
-	}
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+html, body {
+	height: 100%;
+	margin: 0;
+	min-width: 100%;
+}
+#wrapper {
+	min-height: 100%;
+	position: relative;
+	width: 100%;
+	text-align: center;
+	border: 2px solid black;
+}
+#hainks {
+    font-style: italic;
+}
+#attribution {
+	position: absolute;
+	bottom: 0;
+	height: 1%;
+	margin: 1%;
+}
+h2, body, p, #attribution {
+    font-family: 'Istok Web', sans-serif;
+    font-weight: 400;
+}
+body, p {
+    font-size: .75rem;
+    font-weight: 400;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4rem;
+}
+h2 {
+    font-size: 1rem;	
+    font-weight: 400;
+}
+html {
+    background: #dde0d7;
+}
 </style>
 <body>
-    <h1>t.hanks</h1>
-    <script type="text/javascript">
-        document.write(giveHanks());
-    </script>
+    <div id="wrapper";>
+        <h1>t.hanks!</h1>
+        <script type="text/javascript">
+            document.write(giveHanks());
+        </script>
+        <div id = "attribution">
+            images created from <a href="https://neuralblender.com/">neuralblender.com</a>
+        </div>
+    </div>
 </body>
 </html>
