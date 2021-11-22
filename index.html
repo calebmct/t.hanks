@@ -2,22 +2,22 @@
 <html>
     <head>
         <title>t.hanks</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="/apple-t_hanks-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/apple-t_hanks-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/apple-t_hanks-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/apple-t_hanks-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/apple-t_hanks-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/apple-t_hanks-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/apple-t_hanks-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/apple-t_hanks-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-t_hanks-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/android-t_hanks-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/manifest.json">
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-t_hanks-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-t_hanks-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-t_hanks-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-t_hanks-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-t_hanks-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-t_hanks-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-t_hanks-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-t_hanks-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-t_hanks-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="android-t_hanks-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-t_hanks-144x144.png">
+        <meta name="msapplication-TileImage" content="ms-t_hanks-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <script type="text/javascript">
             var imageUrls = [
@@ -83,6 +83,16 @@
                 , "hanks00060.png"
                 , "hanks00061.png"
                 , "hanks00062.png"
+                , "hanks00063.png"
+                , "hanks00064.png"
+                , "hanks00065.png"
+                , "hanks00066.png"
+                , "hanks00067.png"
+                , "hanks00068.png"
+                , "hanks00069.png"
+                , "hanks00070.png"
+                , "hanks00071.png"
+                , "hanks00072.png"
             ];
             var imgTitle = [
                 "sombrero hanks"
@@ -116,7 +126,7 @@
                 , "wrinkle monster hanks"
                 , "pelican hanks"
                 , "surprised hanks"
-                , "graffiti hanks"
+                , "graffiti stache hanks"
                 , "parrothead hanks"
                 , "sloth from goonies hanks"
                 , "casual corporate photoshoot hanks"
@@ -140,18 +150,28 @@
                 , "silly putty hanks"
                 , "forehanks"
                 , "buscemhanks"
-                , "wanna buy a toy? hanks"
+                , "pssst, I bought a 3D printer hanks"
                 , "hankserace"
-                , "grandpa hanks on a zoom call"
+                , "is this thing on? hanks"
                 , "chum drum bedhanks"
                 , "king of the hanks"
                 , "miniature hanks terrier"
                 , "restful hanks"
+                , "body cast hanks"
+                , "skipper hanks"
+                , "blow-up hanks"
+                , "tom hainksdecker"
+                , "lil baby hanks"
+                , "uncle hanks"
+                , "big thumb hanks"
+                , "disappointed hanks"
+                , "glam rock dad beachcomber hanks"
+                , "pope brad hanks"
             ];
             function giveHanks() {
                 var dataIndex = Math.floor(Math.random() * imageUrls.length);
-                var img = '<div> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div> <div align=\"center\";>';
-                var title = '<div id=\"hainks\";> <h2>from ' + imgTitle[dataIndex] + '</h2>';
+                var img = '<div> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div>';
+                var title = '<div id=\"hainks\";> <h2>from ' + imgTitle[dataIndex] + '</h2></div>';
                 var getHanks = img + title;
                 return getHanks;
             }
@@ -162,25 +182,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html, body {
-	height: 100%;
-	margin: 0;
-	min-width: 100%;
+	height: 99%;
+	margin: .15rem;
+	min-width: 99%;
+	overflow: hidden;
 }
 #wrapper {
-	min-height: 100%;
+	min-height: 99%;
 	position: relative;
-	width: 100%;
+	width: 99%;
 	text-align: center;
-	border: 2px solid black;
 }
 #hainks {
-    font-style: italic;
+    margin: 0;
 }
 #attribution {
 	position: absolute;
 	bottom: 0;
-	height: 1%;
+	height: 5%;
 	margin: 1%;
+    font-style: italic;
 }
 h2, body, p, #attribution {
     font-family: 'Istok Web', sans-serif;
@@ -193,6 +214,7 @@ body, p {
 h1 {
     font-family: 'DM Serif Display', serif;
     font-size: 4rem;
+    margin-bottom: 4px;
 }
 h2 {
     font-size: 1rem;	
@@ -209,7 +231,7 @@ html {
             document.write(giveHanks());
         </script>
         <div id = "attribution">
-            images created from <a href="https://neuralblender.com/">neuralblender.com</a>
+            images created using the prompt 't.hanks' from <a href="https://neuralblender.com/">neuralblender.com</a>
         </div>
     </div>
 </body>
