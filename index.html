@@ -84,7 +84,7 @@
                 , "hanks00061.png"
                 , "hanks00062.png"
             ];
-            var imageAlt = [
+            var imgTitle = [
                 "sombrero hanks"
                 , "CEO hanks"
                 , "salvahanks tommi"
@@ -150,13 +150,10 @@
             ];
             function giveHanks() {
                 var dataIndex = Math.floor(Math.random() * imageUrls.length);
-                var img = '<img src=\"hanks/' + imageUrls[dataIndex] + '\" ';
-                var altTag = 'alt=\"' + imageAlt[dataIndex];
-                img += altTag + '\"/>';
-                return img;
-            }
-            function getHanks() {
-                setTimeout*(function(){var alt = link.getElementsByTagName('img')[0].alt; return alt;}, 100);
+                var img = '<div align=\"center\";> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div> <div align=\"center\";>';
+                var title = '<div align=\"center\";> <h5>' + imgTitle[dataIndex] + '</h5>';
+                insertHanks = img + title;
+                return insertHanks;
             }
         </script>
     </head>
@@ -244,17 +241,8 @@
 </style>
 <body>
     <h1>t.hanks</h1>
-    <div align="center";>
-        <script type="text/javascript">
-            document.write(giveHanks());
-        </script>
-    </div>
-    <div align="center";>
-        <h5>
-        <script type="text/javascript">
-            document.write(getHanks());
-        </script>
-        </h5>
-    </div>
+    <script type="text/javascript">
+        document.write(giveHanks());
+    </script>
 </body>
 </html>
