@@ -2,22 +2,22 @@
 <html>
     <head>
         <title>t.hanks</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="apple-t_hanks-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="apple-t_hanks-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="apple-t_hanks-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="apple-t_hanks-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="apple-t_hanks-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="apple-t_hanks-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="apple-t_hanks-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="apple-t_hanks-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-t_hanks-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="android-t_hanks-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-t_hanks-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-t_hanks-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-t_hanks-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-t_hanks-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-t_hanks-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-t_hanks-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-t_hanks-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-t_hanks-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-t_hanks-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-t_hanks-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
         <link rel="manifest" href="manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="ms-t_hanks-144x144.png">
+        <meta name="msapplication-TileImage" content="favicon/ms-t_hanks-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <script type="text/javascript">
             var imageUrls = [
@@ -181,16 +181,22 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-html, body {
-	height: 99%;
-	margin: .15rem;
-	min-width: 99%;
+html {
+	height:100%;
+	width: 100%;
+	background: #dde0d7;
+	position: relative;
+}
+body {
+	min-height: 100%;
+	min-width: 100%;
+	margin: 0 0 20px;
 	overflow: hidden;
+	font-family: 'Istok Web', sans-serif;
+	font-weight: 400;
+	font-size: 1.5rem;
 }
 #wrapper {
-	min-height: 99%;
-	position: relative;
-	width: 99%;
 	text-align: center;
 }
 #hainks {
@@ -199,17 +205,10 @@ html, body {
 #attribution {
 	position: absolute;
 	bottom: 0;
-	height: 5%;
-	margin: 1%;
-    font-style: italic;
-}
-h2, body, p, #attribution {
-    font-family: 'Istok Web', sans-serif;
-    font-weight: 400;
-}
-body, p {
-    font-size: .75rem;
-    font-weight: 400;
+	height: 20px;
+	margin: 5px;
+	font-style: italic;
+	font-size: .75rem;
 }
 h1 {
     font-family: 'DM Serif Display', serif;
@@ -219,9 +218,6 @@ h1 {
 h2 {
     font-size: 1rem;	
     font-weight: 400;
-}
-html {
-    background: #dde0d7;
 }
 </style>
 <body>
