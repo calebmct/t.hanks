@@ -180,6 +180,10 @@
                 var orig = document.getElementById("hanksypanksy").innerHTML;
                 console.log(orig);
             };
+            function runMore(){
+                giveHanks();
+                testVar();
+            }
         </script>
     </head>
 <style>
@@ -242,7 +246,7 @@ h2 {
             document.write(giveHanks());
         </script>
         <br/><br/>
-        <button id="refresh" onclick="giveHanks()">More Hanks</button>
+        <button id="refresh" onclick="runMore()">More Hanks</button>
         <div id = "attribution">
             images created using the prompt 't.hanks' from <a href="https://neuralblender.com/">neuralblender.com</a>
         </div>
