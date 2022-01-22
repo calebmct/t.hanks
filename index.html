@@ -173,11 +173,14 @@
                 var img = '<div id=\"hanksypanksy\";> <img src=\"hanks/' + imageUrls[dataIndex] + '\" alt=\"t.hanks\"/> </div>';
                 var title = '<div id=\"hainks\";> <h2>from ' + imgTitle[dataIndex] + '</h2></div>';
                 var getHanks = img + title;
-                var orig = document.getElementById("hanksypanksy").innerHTML;
                 console.log(dataIndex);
-                console.log(orig);
+                testVar();
                 return getHanks;
-            }
+            };
+            function testVar(){
+            var orig = document.getElementById("hanksypanksy").innerHTML;
+            console.log(orig);
+            };
         </script>
     </head>
 <style>
